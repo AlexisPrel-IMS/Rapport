@@ -1,0 +1,62 @@
+/* generalities				blue: #2424AA red:#A02C2C */
+	body{color:#111111;font-family:Euphemia;text-align:justify;}
+
+/* nav bar */ 
+	nav.top{margin:0%;padding-left:25%;padding-right:25%;background-color:rgba(0,0,0,0.933333);position:fixed;top:0;width:100%;overflow:hidden;z-index:100;height:7.5%}
+	nav.left{margin:0%;padding:0%;background-color:rgba(0,0,0,0.9);position:fixed;top:7.5%;left:0;width:50%;z-index:100;}
+	nav.right{transition:max-height 500ms linear ;margin:0%;max-height:100%;padding:0 3% 0 3%;background-color:rgba(0,0,0,0.933333);overflow:hidden;position:fixed;top:7.5%;right:0;width:30%;z-index:100;}
+	nav.top a{display:inline-block;margin:-5px;background:rgba(0,0,0,0);color:white;padding:15px;}
+	nav.top a.actif{background:#A02C2C;}
+	nav.top a:hover{background:#782121;}
+	nav ul{padding:0;margin:0;}
+	nav li{list-style-position:outside;list-style-type:none;}
+	nav a{color:white;}
+
+/* titles */
+	h1{font-family:Euphemia,Arial,Open sans;}
+	h1,h2,title{text-align:center;}
+	h1,h2,h3,h4{color:#A02C2C;}
+	h5{clear:left;}
+
+/* blocks 			*/
+/* ├────── text		*/
+/*	section{position:absolute;top:5%;}*/
+	article{padding:10%;overflow:auto;border-bottom:solid 10px #111111;background-color:rgb(250,250,250);}
+/* ├────── figures	*/
+	figure{width:100%;margin-left:0;}
+	figure.left{ width:40%;float:left;margin-right:1em;margin-left:0;}
+	figure.right{width:40%;float:right;margin-left:1em;margin-right:0;}
+	figure img{width:100%;margin:0;float:left;}
+	
+	legend{font-style:italic;}
+	table legend{text-align:center;}
+	figure td video{width:100%}
+	/*figure td video{height:100%;}*/
+	
+	figure>a{display:inline-block;width:10%;float:left;border-left:solid black 1px;background:#A02C2C;color:white;padding:.25em 0em .25em 0em;}
+	figure>a.inactive,figure>a.inactive:hover{background:#111111;}
+	hr{visibility:hidden;clear:both;}
+	
+	figure>video{max-width:50%;margin-left:25%}
+	
+	.cleared{clear:left;} /* text right after a figure */
+
+/* text bricks */
+	a{text-align:center;text-decoration:none;color:#A02C2C;}
+	p a{white-space:nowrap;}
+	code,blockcode{background:#FFE680;padding:.25em}
+	blockcode label{ background:#FFFFFF;padding:.25em;margin-left:.5em}
+	blockcode{margin:1em;display:block;white-space:pre;}
+	mark.math{background:#AFC6E9;padding:.25em;font-family:Times New Roman;display:inline-block;border-radius:.25em;text-align:center;font-style:italic}
+	mark.equation{display:block;width:100%;text-align:center;background:none;margin:0;padding:0;}
+	pre{padding:0em;}
+	th{text-align:left;}
+	
+	#documentation li:target {padding:1em;list-style-position:inside;list-style-type:none;background-color:rgba(255,255,255,0.8);position:fixed;bottom:0;left:10%;width:90%;z-index:100;height:5%}
+
+
+	
+/* commands */
+	button,input[type="submit"]{border:none;background:#A02C2C;color:white;padding:.5em;}
+	button:hover,input[type="submit"]:hover,figure>a:hover{background:#782121;}
+	form{padding:0;border:solid black 1px;display:inline-block}
